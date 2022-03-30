@@ -1,0 +1,36 @@
+{
+  "name": "@lab1/website",
+  "version": "1.0.0",
+  "description": "Lab1 Website",
+  "author": "Bruno Vacare Tezine",
+  "license": "Proprietary",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-cli serve --mode development --env development --port 9090 --static dist/wwwroot"
+  },
+  "dependencies": {
+    "@lab1/core": "file:../Core",
+    "@lab1/material": "^1.0.0",
+    "axios": "^0.26.1",
+    "prismjs": "^1.27.0",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/prismjs": "^1.26.0",
+    "fork-ts-checker-webpack-plugin": "6.0.4",
+    "fs-extra": "^9.1.0",
+    "mini-css-extract-plugin": "1.3.1",
+    "sass": "1.29.0",
+    "sass-loader": "10.1.0",
+    "style-loader": "2.0.0",
+    "ts-loader": "8.0.11",
+    "tsconfig-paths-webpack-plugin": "3.3.0",
+    "typescript": "^4.5.4",
+    "watchpack": "^2.1.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^4.6.0",
+    "webpack-shell-plugin-next": "1.2.0",
+    "webpack-watch-files-plugin": "^1.1.0"
+  }
+}

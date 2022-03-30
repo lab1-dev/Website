@@ -1,0 +1,8 @@
+/node_modules/
+/package-lock.json
+/1DockerHubLogin.cmd
+/2CompileFrontend.cmd
+/3CreateDockerImage-EditarVersao.cmd
+/4SendToDockerHub-EditarVersao.cmd
+/5Optional-TestDockerImage.cmd
+/dist/
