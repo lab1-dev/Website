@@ -40,7 +40,8 @@ export class PageRating extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Rating', 'Ratings provide insight regarding other\'s opinions and experiences with a product. Collecting user feedback via ratings is a simple analytic that can provide a lot of feedback to your product or application.');
+        this.buildHeader(columnLayout, 'Rating', 'Ratings provide insight regarding other\'s opinions and experiences with a product. Collecting user feedback via ratings is a simple analytic that can provide a lot of feedback to your product or application.',
+            'PageRating.tsx');
 
         this.layout1 = this.buildColumnLayoutSection(columnLayout, 'Typescript', 'Rating-Typescript.ts', Shared.docTypescript,'white',true,Align.HorizontalCenter);
         this.layout2 = this.buildColumnLayoutSection(columnLayout, 'Managed Typescript', 'Rating-ManagedTS.ts', Shared.docManagedTS,'white',true,Align.HorizontalCenter);

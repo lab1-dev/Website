@@ -39,7 +39,7 @@ export class PageIntroduction extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Lab1', 'Typescript Framework.');
+        this.buildHeader(columnLayout, 'Lab1', 'Typescript Framework.','PageIntroduction.ts');
 
         this.layout1 = this.buildTextBlockArea(columnLayout, 'Introduction');
         this.layout2 = this.buildTextBlockArea(columnLayout, 'Architecture');

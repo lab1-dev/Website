@@ -30,7 +30,7 @@ export class PageIconButton extends BasePage {
 
     buildLayouts(){
         let columnLayout=new ColumnLayout({parent:this, horizontalAlign:HorizontalAlign.Center});
-        this.buildHeader(columnLayout,'IconButton','Similar to Button, but with icons.');
+        this.buildHeader(columnLayout,'IconButton','Similar to Button, but with icons.','PageIconButton.tsx');
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript', 'IconButton-Typescript.ts', Shared.docTypescript,'white',Align.HorizontalCenter| Align.VerticalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript', 'IconButton-ManagedTS.ts', Shared.docManagedTS,'white',Align.HorizontalCenter| Align.VerticalCenter);

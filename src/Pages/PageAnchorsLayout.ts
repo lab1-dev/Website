@@ -18,7 +18,8 @@ export class PageAnchorsLayout extends BasePage {
 
     buildLayouts(){
         let columnLayout=new ColumnLayout({parent:this, horizontalAlign:HorizontalAlign.Center});
-        this.buildHeader(columnLayout,'AnchorsLayout','Allows the User to position components easily using a combination of anchors (Left, Right, Top, Bottom, VerticalCenter, HorizontalCenter).');
+        this.buildHeader(columnLayout,'AnchorsLayout','Allows the User to position components easily using a combination of anchors (Left, Right, Top, Bottom, VerticalCenter, HorizontalCenter).','PageAnchorsLayout.ts');
+
         this.layout1 = this.buildRowLayoutSection(columnLayout,'Usage', 'AnchorsLayout-Usage.ts','','white',Align.HorizontalCenter);
     }
 

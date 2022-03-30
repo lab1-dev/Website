@@ -30,7 +30,7 @@ export class PagePaper extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Paper', 'Paper is a useful and flexible way to shape other components without needing css or style. ');
+        this.buildHeader(columnLayout, 'Paper', 'Paper is a useful and flexible way to shape other components without needing css or style. ','PagePaper.tsx');
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript', 'Paper-Typescript.ts', Shared.docTypescript, '#f5f5f5',Align.HorizontalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript', 'Paper-ManagedTS.ts', Shared.docManagedTS, '#f5f5f5',Align.HorizontalCenter);

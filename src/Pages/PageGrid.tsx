@@ -31,7 +31,7 @@ export class PageGrid extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Grid', 'The grid component helps keeping layout consistent across various screen resolutions and sizes. Lab1 comes with a 12-point grid system and contains 5 types of breakpoints that are used for specific screen sizes.');
+        this.buildHeader(columnLayout, 'Grid', 'The grid component helps keeping layout consistent across various screen resolutions and sizes. Lab1 comes with a 12-point grid system and contains 5 types of breakpoints that are used for specific screen sizes.','PageGrid.tsx');
 
         this.layout1 = this.buildColumnLayoutSection(columnLayout, 'Typescript', 'Grid-Typescript.ts', Shared.docTypescript, '#f5f5f5');
         this.layout2 = this.buildColumnLayoutSection(columnLayout, 'Managed Typescript', 'Grid-ManagedTS.ts', Shared.docManagedTS, '#f5f5f5');

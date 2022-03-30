@@ -47,7 +47,7 @@ export class PageSimpleTable extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'SimpleTable', 'A Basic Material Design table with some features.');
+        this.buildHeader(columnLayout, 'SimpleTable', 'A Basic Material Design table with some features.','PageSimpleTable.tsx');
 
         this.layout1 = this.buildColumnLayoutSection(columnLayout, 'Typescript', 'SimpleTable-Typescript.ts', Shared.docTypescript, '#f5f5f5',true,Align.FillWidth);
         this.layout2 = this.buildColumnLayoutSection(columnLayout, 'Managed Typescript', 'SimpleTable-ManagedTS.ts', Shared.docManagedTS, '#f5f5f5',true,Align.FillWidth);

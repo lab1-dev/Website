@@ -1,5 +1,6 @@
 import {Align, ColumnLayout, GridLayout, Component, Label, Property, Rectangle, RouterPage, RouterPageProps, RowLayout,} from "@lab1/core"
 import {Button, Color, Material, Size, Spacer, Text, ToolBar, Typo} from "@lab1/material";
+import {Shared} from "../Codes/Shared";
 
 interface Test {
     title: string
@@ -22,7 +23,7 @@ export class BasePage extends RouterPage {
         this.t0 = performance.now();
     }
 
-    protected buildHeader(parent: Component, title: string, description: string): void {
+    protected buildHeader(parent: Component, title: string, description: string, pageSourceFileName?: string): void {
         let columnLayout = new ColumnLayout({
             marginTop: 64,
             parent: parent,
@@ -41,10 +42,18 @@ export class BasePage extends RouterPage {
         this.elapsedLabel = new Label({
             parent: columnLayout,
             style: 'font-size:9px; color:silver;'
-        })
+        });
+        if (pageSourceFileName) {
+            new Label({
+                parent: columnLayout,
+                text: 'source code',
+                style: 'font-size:9px; color:silver;text-decoration: underline;cursor:pointer;',
+                onClick: () => window.open(`${Shared.baseURL}${pageSourceFileName}`, '_self')
+            })
+        }
     }
 
-    protected buildTextBlockArea(parent:Component, title:string):ColumnLayout{
+    protected buildTextBlockArea(parent: Component, title: string): ColumnLayout {
         let columnLayout = new ColumnLayout({
             parent: parent,
             width: '100%',
@@ -52,7 +61,7 @@ export class BasePage extends RouterPage {
         });
         new Text({
             parent: columnLayout,
-            marginBottom:  5,
+            marginBottom: 5,
             typo: Typo.h5,
             childContent: `<b>${title}</b>`
         });

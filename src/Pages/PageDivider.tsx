@@ -31,7 +31,7 @@ export class PageDivider extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Divider', 'A divider is a thin line that groups content in lists and layouts.');
+        this.buildHeader(columnLayout, 'Divider', 'A divider is a thin line that groups content in lists and layouts.','PageDivider.tsx');
 
         this.layout1 = this.buildColumnLayoutSection(columnLayout, 'Typescript', 'Divider-Typescript.ts', Shared.docTypescript, '#f5f5f5', true, Align.HorizontalCenter);
         this.layout2 = this.buildColumnLayoutSection(columnLayout, 'Managed Typescript', 'Divider-ManagedTS.ts', Shared.docManagedTS, '#f5f5f5', true, Align.HorizontalCenter);

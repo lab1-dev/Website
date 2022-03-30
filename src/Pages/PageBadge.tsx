@@ -27,7 +27,7 @@ export class PageBadge extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Badge', 'A badge is a useful way to wrap or overlay an action button or icon with a simple notification, making it easy to emphasize things like the number of notifications received.');
+        this.buildHeader(columnLayout, 'Badge', 'A badge is a useful way to wrap or overlay an action button or icon with a simple notification, making it easy to emphasize things like the number of notifications received.','PageBadge.tsx');
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript', 'Badge-Typescript.ts', Shared.docTypescript,'white',Align.HorizontalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript', 'Badge-ManagedTS.ts', Shared.docManagedTS,'white',Align.HorizontalCenter);

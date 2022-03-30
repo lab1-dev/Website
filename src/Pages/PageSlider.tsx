@@ -33,7 +33,7 @@ export class PageSlider extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Slider', 'A slider is a visual representation and action to let the user select from a range of values.');
+        this.buildHeader(columnLayout, 'Slider', 'A slider is a visual representation and action to let the user select from a range of values.','PageSlider.tsx');
 
         this.layout1 = this.buildColumnLayoutSection(columnLayout, 'Typescript', 'Slider-Typescript.ts', Shared.docTypescript);
         this.layout2 = this.buildColumnLayoutSection(columnLayout, 'Managed Typescript', 'Slider-ManagedTS.ts', Shared.docManagedTS);

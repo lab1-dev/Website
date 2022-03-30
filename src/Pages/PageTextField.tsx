@@ -50,7 +50,7 @@ export class PageTextField extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'TextField', 'Text field components are used for receiving user provided information.');
+        this.buildHeader(columnLayout, 'TextField', 'Text field components are used for receiving user provided information.','PageTextField.tsx');
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript', 'TextField-Typescript.ts', Shared.docTypescript,'white',Align.HorizontalCenter| Align.VerticalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript', 'TextField-ManagedTS.ts', Shared.docManagedTS,'white',Align.HorizontalCenter| Align.VerticalCenter);

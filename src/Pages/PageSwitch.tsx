@@ -33,7 +33,7 @@ export class PageSwitch extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Switch', 'Similar to a checkbox but visually different, the switch lets the User switch between two values with the tap of a button.');
+        this.buildHeader(columnLayout, 'Switch', 'Similar to a checkbox but visually different, the switch lets the User switch between two values with the tap of a button.','PageSwitch.tsx');
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript', 'Switch-Typescript.ts', Shared.docTypescript,'white',Align.HorizontalCenter| Align.VerticalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript', 'Switch-ManagedTS.ts', Shared.docManagedTS,'white',Align.HorizontalCenter| Align.VerticalCenter);

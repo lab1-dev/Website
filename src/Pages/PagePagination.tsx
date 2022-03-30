@@ -42,7 +42,7 @@ export class PagePagination extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Pagination', 'Pagination allows the User to select a specific page from a range of pages.');
+        this.buildHeader(columnLayout, 'Pagination', 'Pagination allows the User to select a specific page from a range of pages.','PagePagination.tsx');
 
         this.layout1 = this.buildColumnLayoutSection(columnLayout, 'Typescript', 'Pagination-Typescript.ts', Shared.docTypescript, 'white', true, Align.HorizontalCenter);
         this.layout2 = this.buildColumnLayoutSection(columnLayout, 'Managed Typescript', 'Pagination-ManagedTS.ts', Shared.docManagedTS, 'white', true, Align.HorizontalCenter);

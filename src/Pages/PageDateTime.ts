@@ -31,7 +31,7 @@ export class PageDateTime extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'DateTime', `DateTime class is a wrapper of <a style="color: ${Shared.blueTextColor}" href="https://moment.github.io/luxon">Luxon.js</a> Library with some additional features. Tokens used to read from/to strings are the same and available for reference  <a style="color: ${Shared.blueTextColor}" href="https://moment.github.io/luxon/#/formatting?id=table-of-tokens">here</a>.`);//todo add description
+        this.buildHeader(columnLayout, 'DateTime', `DateTime class is a wrapper of <a style="color: ${Shared.blueTextColor}" href="https://moment.github.io/luxon">Luxon.js</a> Library with some additional features. Tokens used to read from/to strings are the same and available for reference  <a style="color: ${Shared.blueTextColor}" href="https://moment.github.io/luxon/#/formatting?id=table-of-tokens">here</a>.`,'PageDateTime.ts');
         this.layout1 = this.buildColumnLayoutSection(columnLayout, 'From string', 'DateTime-fromStrng.ts','','#f5f2f0',false);
         this.layout2 = this.buildColumnLayoutSection(columnLayout, 'To string', 'DateTime-toString.ts','','#f5f2f0',false);
         this.layout3 = this.buildColumnLayoutSection(columnLayout, 'Date math', 'DateTime-Math.ts','','#f5f2f0',false);

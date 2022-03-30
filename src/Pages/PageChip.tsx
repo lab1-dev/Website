@@ -40,7 +40,7 @@ export class PageChip extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Chips', 'Chips are compact elements that allow users to enter information, select a choice, filter content, or trigger an action.');
+        this.buildHeader(columnLayout, 'Chips', 'Chips are compact elements that allow users to enter information, select a choice, filter content, or trigger an action.','PageChip.tsx');
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript', 'Chip-Typescript.ts', Shared.docTypescript,'white',Align.HorizontalCenter| Align.VerticalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript', 'Chip-ManagedTS.ts', Shared.docManagedTS,'white',Align.HorizontalCenter| Align.VerticalCenter);

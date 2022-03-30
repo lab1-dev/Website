@@ -28,7 +28,8 @@ export class PageColumnLayout extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'ColumnLayout', `ColumnLayout layouts components in a single column. It's a simplified version of <a style=\"color: ${Shared.blueTextColor}\" href=\"https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a>.`);
+        this.buildHeader(columnLayout, 'ColumnLayout', `ColumnLayout layouts components in a single column. It's a simplified version of <a style=\"color: ${Shared.blueTextColor}\" href=\"https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a>.`,'PageColumnLayout.ts');
+
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Alignment', 'ColumnLayout-Alignment.ts', "Use the <b>alignChildContent</b> property to define how child components are aligned inside the Columnlayout. The default value is <b>Align.Left | Align.Top</b>, and you can combine one horizontal and one vertical flag together to achieve the desired result. Possible values are: <b>Left, Right, Top, Bottom, HorizontalCenter, VerticalCenter, FillWidth, Baseline.</b>", '#f5f5f5', Align.HorizontalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Spacing', 'ColumnLayout-Spacing.ts', 'Use the <b>spacing</b> property to set the spacing between components inside the ColumnLayout.', '#f5f5f5', Align.HorizontalCenter);
         this.layout4 = this.buildRowLayoutSection(columnLayout, 'Grow', 'ColumnLayout-Grow.ts', 'Use the <b>columnLayoutGrow</b> attached property to define the ability for the component to grow if necessary. If all items have columnLayoutGrow set to 1, the remaining height in the ColumnLayout will be distributed equally to all children. If one of the children has a value of 2, that component would take up twice as much of the height either one of the others.', 'white', Align.HorizontalCenter);

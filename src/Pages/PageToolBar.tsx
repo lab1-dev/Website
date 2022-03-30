@@ -27,7 +27,7 @@ export class PageToolBar extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'ToolBar', 'ToolBar allows grouping Buttons and IconButtons.');
+        this.buildHeader(columnLayout, 'ToolBar', 'ToolBar allows grouping Buttons and IconButtons.','PageToolBar.tsx');
 
         this.layout1 = this.buildColumnLayoutSection(columnLayout, 'Typescript', 'ToolBar-Typescript.ts', Shared.docTypescript, '#f5f5f5',true,Align.FillWidth);
         this.layout2 = this.buildColumnLayoutSection(columnLayout, 'Managed Typescript', 'ToolBar-ManagedTS.ts', Shared.docManagedTS, '#f5f5f5',true,Align.FillWidth);

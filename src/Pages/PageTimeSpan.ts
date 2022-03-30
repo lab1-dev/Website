@@ -27,7 +27,7 @@ export class PageTimeSpan extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'TimeSpan', 'TimeSpan class provides methods to handle time and time intervals.');//todo add description
+        this.buildHeader(columnLayout, 'TimeSpan', 'TimeSpan class provides methods to handle time and time intervals.','PageTimeSpan.ts');
 
         this.layout1 = this.buildColumnLayoutSection(columnLayout, 'From string', 'TimeSpan-fromString.ts','','#f5f2f0',false);
         this.layout2 = this.buildColumnLayoutSection(columnLayout, 'To string', 'TimeSpan-toString.ts','','#f5f2f0',false);

@@ -34,7 +34,7 @@ export class PageListView extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'ListView', 'Easily customizable and scrollable lists. Make them suit your needs with avatars, icons, or something like checkboxes.');
+        this.buildHeader(columnLayout, 'ListView', 'Easily customizable and scrollable lists. Make them suit your needs with avatars, icons, or something like checkboxes.','PageListView.tsx');
 
         this.layout1 = this.buildColumnLayoutSection(columnLayout, 'Typescript', 'ListView-Typescript.ts', Shared.docTypescript, '#f5f5f5', true, Align.HorizontalCenter);
         this.layout2 = this.buildColumnLayoutSection(columnLayout, 'Managed Typescript', 'ListView-ManagedTS.ts', Shared.docManagedTS, '#f5f5f5', true, Align.HorizontalCenter);

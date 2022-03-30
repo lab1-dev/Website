@@ -27,7 +27,7 @@ export class PageGridLayout extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'GridLayout', `GridLayout layouts components inside row/column combinations. It\'s a simplified version of <a style=\"color: ${Shared.blueTextColor}\" href=\"https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Grid</a>.`);
+        this.buildHeader(columnLayout, 'GridLayout', `GridLayout layouts components inside row/column combinations. It\'s a simplified version of <a style=\"color: ${Shared.blueTextColor}\" href=\"https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Grid</a>.`,'PageGridLayout.ts');
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Alignment', 'GridLayout-Alignment.ts', "Use the <b>alignChildContent</b> property to define how child components are aligned inside the GridLayout. The default value is <b>Align.Left | Align.Top</b>, and you can combine one horizontal and one vertical flag together to achieve the desired result. Possible values are: <b>Left, Right, Top, Bottom, HorizontalCenter, VerticalCenter, FillWidth, FillHeight, Baseline.</b>", '#f5f5f5', Align.HorizontalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Rows and Columns', 'GridLayout-RowsAndColumns.ts', "Use the <b>rows</b> and <b>columns</b> properties to set the the number of rows and columns, or use them to define the heights of the rows and the widths of the columns. <br> Example 1: <i>rows: 2</i> creates a GridLayout with 2 rows where each row has a dynamic height based on its childContent's height. <br>\n" +
