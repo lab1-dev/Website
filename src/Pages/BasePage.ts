@@ -23,7 +23,7 @@ export class BasePage extends RouterPage {
         this.t0 = performance.now();
     }
 
-    protected buildHeader(parent: Component, title: string, description: string, pageSourceFileName?: string): void {
+    protected buildHeader(parent: Component, title: string, description: string, pageSourceFileName?: string, componentSourceURL?:string): void {
         let columnLayout = new ColumnLayout({
             marginTop: 64,
             parent: parent,
@@ -39,18 +39,26 @@ export class BasePage extends RouterPage {
             typo: Typo.body1,
             childContent: `${description}`
         });
-        this.elapsedLabel = new Label({
-            parent: columnLayout,
-            style: 'font-size:9px; color:silver;'
-        });
+        if(componentSourceURL){
+            new Label({
+                parent: columnLayout,
+                text: 'Component source code',
+                style: 'font-size:12px; color:silver;text-decoration: underline;cursor:pointer;',
+                onClick: () => window.open(componentSourceURL, '_self')
+            })
+        }
         if (pageSourceFileName) {
             new Label({
                 parent: columnLayout,
-                text: 'source code',
-                style: 'font-size:9px; color:silver;text-decoration: underline;cursor:pointer;',
-                onClick: () => window.open(`${Shared.baseURL}${pageSourceFileName}`, '_self')
+                text: 'This page source code',
+                style: 'font-size:12px; color:silver;text-decoration: underline;cursor:pointer;',
+                onClick: () => window.open(`${Shared.urlPages}${pageSourceFileName}`, '_self')
             })
         }
+        this.elapsedLabel = new Label({
+            parent: columnLayout,
+            style: 'font-size:12px; color:silver;'
+        });
     }
 
     protected buildTextBlockArea(parent: Component, title: string): ColumnLayout {

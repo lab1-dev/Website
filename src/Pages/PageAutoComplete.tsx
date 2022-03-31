@@ -53,7 +53,8 @@ export class PageAutoComplete extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'AutoComplete', 'The Autocomplete component offers simple and flexible type-ahead functionality. It is great for searching a value from a long list of options. In comparison to a Select, the Autocomplete doesn\'t need to know the complete item list, it only calls a search function which will return matching items. The search function can even run asynchronously, i.e. for database queries.','PageAutoComplete.tsx');
+        this.buildHeader(columnLayout, 'AutoComplete', 'The Autocomplete component offers simple and flexible type-ahead functionality. It is great for searching a value from a long list of options. In comparison to a Select, the Autocomplete doesn\'t need to know the complete item list, it only calls a search function which will return matching items. The search function can even run asynchronously, i.e. for database queries.',
+            'PageAutoComplete.tsx',`${Shared.urlMaterialComponents}/AutoComplete/AutoComplete.ts`);
 
         this.layout1 = this.buildColumnLayoutSection(columnLayout, 'Typescript', 'AutoComplete-Typescript.ts', Shared.docTypescript,'white',true,Align.HorizontalCenter);
         this.layout2 = this.buildColumnLayoutSection(columnLayout, 'Managed Typescript', 'AutoComplete-ManagedTS.ts', Shared.docManagedTS,'white',true,Align.HorizontalCenter);

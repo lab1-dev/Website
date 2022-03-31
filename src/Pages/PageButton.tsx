@@ -45,7 +45,8 @@ export class PageButton extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Button', 'A Material Design Button for actions and links with multiple functions.','PageButton.tsx');
+        this.buildHeader(columnLayout, 'Button', 'A Material Design Button for actions and links with multiple functions.',
+            'PageButton.tsx',`${Shared.urlMaterialComponents}/Button/Button.ts`);
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript','Button-Typescript.ts',Shared.docTypescript,'white',Align.HorizontalCenter| Align.VerticalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript','Button-ManagedTS.ts',Shared.docManagedTS,'white',Align.HorizontalCenter| Align.VerticalCenter);

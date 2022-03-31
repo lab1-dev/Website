@@ -37,7 +37,8 @@ export class PageAvatar extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Avatar', 'The component is typically used to display circular user profile pictures, icons or text.','PageAvatar.tsx');
+        this.buildHeader(columnLayout, 'Avatar', 'The component is typically used to display circular user profile pictures, icons or text.','PageAvatar.tsx',
+            `${Shared.urlMaterialComponents}/Avatar/Avatar.ts`);
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript', 'Avatar-Typescript.ts', Shared.docTypescript,'white',Align.HorizontalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript', 'Avatar-ManagedTS.ts', Shared.docManagedTS,'white',Align.HorizontalCenter);

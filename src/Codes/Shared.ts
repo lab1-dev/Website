@@ -5,7 +5,10 @@ export class Shared{
     static docManagedTSX='Lab1 manages creation/removal when using Managed TSX approach.';
     static docPropertyChanges='Sample code illustrating how to change the value of properties.';
     static blueTextColor='#004a9f';
-    static baseURL='https://github.com/lab1-dev/Website/tree/main/src/Pages/'
+    static urlPages='https://github.com/lab1-dev/Website/tree/main/src/Pages/'
+    static urlMaterialComponents='https://github.com/lab1-dev/Material/tree/main/src/Components';
+    static urlCoreComponents='https://github.com/lab1-dev/Core/tree/main/src/Components';
+    static urlCoreCodes='https://github.com/lab1-dev/Core/tree/main/src/Codes';
 
     static headers=['ID','Name','Email','Gender','IP Address']
     static rows=[['1','Vivien Harvey', 'sauer.lisette@cggup.com','Female','192.168.1.1'],

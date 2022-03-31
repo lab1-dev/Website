@@ -36,7 +36,8 @@ export class PageRadio extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Radio', 'Radio buttons allow the user to select a single choice from a group of options.','PageRadio.tsx');
+        this.buildHeader(columnLayout, 'Radio', 'Radio buttons allow the user to select a single choice from a group of options.',
+            'PageRadio.tsx',`${Shared.urlMaterialComponents}/Radio/Radio.ts`);
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript', 'Radio-Typescript.ts', Shared.docTypescript,'white',Align.HorizontalCenter| Align.VerticalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript', 'Radio-ManagedTS.ts', Shared.docManagedTS,'white',Align.HorizontalCenter| Align.VerticalCenter);

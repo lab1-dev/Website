@@ -35,7 +35,8 @@ export class PagePopover extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Popover', 'A Popover can be used to display some content on top of another.','PagePopover.tsx');
+        this.buildHeader(columnLayout, 'Popover', 'A Popover can be used to display some content on top of another.',
+            'PagePopover.tsx',`${Shared.urlMaterialComponents}/Popover/Popover.ts`);
 
         this.layout1 = this.buildColumnLayoutSection(columnLayout, 'Typescript', 'Popover-Typescript.ts', Shared.docTypescript,'white',true,Align.HorizontalCenter);
         this.layout2 = this.buildColumnLayoutSection(columnLayout, 'Managed Typescript', 'Popover-ManagedTS.ts', Shared.docManagedTS,'white',true,Align.HorizontalCenter);

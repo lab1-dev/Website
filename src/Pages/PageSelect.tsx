@@ -36,7 +36,8 @@ export class PageSelect extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Select', 'Select fields allow users to provide information from a list of options.','PageSelect.tsx');
+        this.buildHeader(columnLayout, 'Select', 'Select fields allow users to provide information from a list of options.',
+            'PageSelect.tsx',`${Shared.urlMaterialComponents}/Select/Select.ts`);
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript', 'Select-Typescript.ts', Shared.docTypescript,'white',Align.HorizontalCenter| Align.VerticalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript', 'Select-ManagedTS.ts', Shared.docManagedTS,'white',Align.HorizontalCenter| Align.VerticalCenter);

@@ -44,7 +44,8 @@ export class PageCheckBox extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'CheckBox', 'CheckBoxes are a great way to allow the user to make a selection of choices from things like a list. If you want to let the user turn a setting on or off on demand, a Switch component is recommended instead.','PageCheckBox.tsx');
+        this.buildHeader(columnLayout, 'CheckBox', 'CheckBoxes are a great way to allow the user to make a selection of choices from things like a list. If you want to let the user turn a setting on or off on demand, a Switch component is recommended instead.',
+            'PageCheckBox.tsx',`${Shared.urlMaterialComponents}/CheckBox/CheckBox.ts`);
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript', 'CheckBox-Typescript.ts', Shared.docTypescript,'white',Align.HorizontalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript', 'CheckBox-ManagedTS.ts', Shared.docManagedTS,'white',Align.HorizontalCenter);

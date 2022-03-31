@@ -59,7 +59,7 @@ export class PageProgress extends BasePage {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
         this.buildHeader(columnLayout, 'Progress', 'Progress indicators that either show the length of a process or unspecified wait time, also known as indeterminate state. The animation is done with SVGs and CSS.\n' +
             '<br><br>Progress indicators inform users about the status of ongoing processes, such as loading an app, submitting a form, or saving updates. They communicate an app\'s state and indicate available actions, such as whether users can navigate away from the current screen.',
-            'PageProgress.tsx');
+            'PageProgress.tsx',`${Shared.urlMaterialComponents}/Progress/ProgressCircular.ts`);
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript', 'Progress-Typescript.ts', Shared.docTypescript,'white',Align.HorizontalCenter| Align.VerticalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript', 'Progress-ManagedTS.ts', Shared.docManagedTS,'white',Align.HorizontalCenter| Align.VerticalCenter);

@@ -40,7 +40,8 @@ export class PageMenu extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'Menu', 'The component shows a menu at the position of the element used to activate it.', 'PageMenu.tsx');
+        this.buildHeader(columnLayout, 'Menu', 'The component shows a menu at the position of the element used to activate it.',
+            'PageMenu.tsx',`${Shared.urlMaterialComponents}/Menu/Menu.ts`);
 
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Typescript', 'Menu-Typescript.ts', Shared.docTypescript,'white',Align.HorizontalCenter| Align.VerticalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Managed Typescript', 'Menu-ManagedTS.ts', Shared.docManagedTS,'white',Align.HorizontalCenter| Align.VerticalCenter);

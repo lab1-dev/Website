@@ -38,7 +38,8 @@ export class PageFabButton extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout,'FabButton','A floating action button (FAB).','PageFabButton.tsx');
+        this.buildHeader(columnLayout,'FabButton','A floating action button (FAB).',
+            'PageFabButton.tsx',`${Shared.urlMaterialComponents}/Button/FabButton.ts`);
 
         this.layout1 = this.buildRowLayoutSection(columnLayout,'Typescript', 'FabButton-Typescript.ts',Shared.docTypescript,'white',Align.HorizontalCenter| Align.VerticalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout,'Managed Typescript', 'FabButton-ManagedTS.ts',Shared.docManagedTS,'white',Align.HorizontalCenter| Align.VerticalCenter);

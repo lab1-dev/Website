@@ -29,7 +29,8 @@ export class PageRowLayout extends BasePage {
 
     buildLayouts() {
         let columnLayout = new ColumnLayout({parent: this, horizontalAlign: HorizontalAlign.Center});
-        this.buildHeader(columnLayout, 'RowLayout', `RowLayout layouts components in a single row. It's a simplified version of <a style=\"color: ${Shared.blueTextColor}\" href=\"https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a>.`,'PageRowLayout.ts');
+        this.buildHeader(columnLayout, 'RowLayout', `RowLayout layouts components in a single row. It's a simplified version of <a style=\"color: ${Shared.blueTextColor}\" href=\"https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a>.`,
+            'PageRowLayout.ts',`${Shared.urlCoreComponents}/RowLayout/RowLayout.ts`);
         this.layout1 = this.buildRowLayoutSection(columnLayout, 'Alignment', 'RowLayout-Alignment.ts', "Use the <b>alignChildContent</b> property to define how child components are aligned inside the RowLayout. The default value is <b>Align.Left | Align.Top</b>, and you can combine one horizontal and one vertical flag together to achieve the desired result. Possible values are: <b>Left, Right, Top, Bottom, HorizontalCenter, VerticalCenter, FillHeight, Baseline.</b>", '#f5f5f5', Align.HorizontalCenter);
         this.layout2 = this.buildRowLayoutSection(columnLayout, 'Spacing', 'RowLayout-Spacing.ts', 'Use the <b>spacing</b> property to set the spacing between components inside the RowLayout.', '#f5f5f5', Align.HorizontalCenter);
         this.layout3 = this.buildRowLayoutSection(columnLayout, 'Wrap', 'RowLayout-Wrap.ts', 'By default, components inside a RowLayout uses only one row. Use the <b>wrap</b> property to allow wrap into multiple rows when there is no width available in the current row.', '#f5f5f5', Align.HorizontalCenter);
